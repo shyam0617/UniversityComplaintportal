@@ -1,0 +1,176 @@
+/* Global styles */
+body {
+    background-color: #f7f3e9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4267b2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+button {
+    font-weight: 900;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #fff;
+    color:white;
+    margin-right: 10px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Added transition for transform and box-shadow */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Initial box-shadow */
+    background-color: #ff9f43;
+}
+
+button:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Change box-shadow on hover */
+}
+
+.container {
+    background-color: #cbd6f5;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #041f22;
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4267b2;
+    color: #fff;
+}
+
+.pending-status {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.solved-status {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* Styles specific to Student Dashboard */
+
+.profile-section {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.grievance-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+form label {
+    flex-basis: 150px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+form select,
+form input[type="text"],
+form textarea {
+    flex-grow: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button[type="submit"] {
+    margin-top: 10px;
+    background-color: #4267b2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s; /* Added transition for transform and box-shadow */
+}
+
+form button[type="submit"]:hover,
+#viewGrievancesBtn:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Change box-shadow on hover */
+}
+
+#viewGrievancesBtn {
+    background-color: #4267b2; /* Permanently set background color */
+    color: #fff; /* Permanently set text color */
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s; /* Added transition for transform and box-shadow */
+}
+
+#viewGrievancesBtn:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Change box-shadow on hover */
+}

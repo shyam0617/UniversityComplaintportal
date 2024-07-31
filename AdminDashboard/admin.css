@@ -1,0 +1,215 @@
+/* Global styles */
+body {
+  background-color: #f7f3e9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4267b2;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+h1 {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+.right-btns {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  font-weight: 900;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #ff9f43;
+  color: #fff;
+  margin-right: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  background-color: #cbd6f5;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+  text-align: center;
+}
+
+h2 {
+  color: #041f22;
+  margin-top: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4267b2;
+  color: #fff;
+}
+
+.pending-status {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.solved-status {
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+/* Styles specific to Admin Dashboard */
+
+#profile {
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+  text-align: left;
+}
+
+#profile p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.secondPortion {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+  margin-top: 20px;
+  text-align: left;
+}
+
+.filters {
+  margin-bottom: 20px;
+  text-align: left; /* Adjust alignment to left */
+}
+
+.filters .filter-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.filters label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.filters select {
+  padding: 10px;
+  border-radius: 5px;
+  flex-grow: 1;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.filters select:hover {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#viewGrievancesBtn,
+#viewStatisticsBtn {
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+#viewGrievancesBtn {
+  background-color: #4267b2;
+}
+
+#viewStatisticsBtn {
+  background-color: #268d64; /* Different color for View Statistics button */
+}
+
+#viewGrievancesBtn:hover,
+#viewStatisticsBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .right-btns {
+      flex-direction: column;
+      margin-top: 10px;
+  }
+
+  .right-btns button {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .filters .filter-item {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .filters label {
+      margin-bottom: 5px;
+  }
+
+  .filters select {
+      width: 100%;
+  }
+
+  #viewGrievancesBtn,
+  #viewStatisticsBtn {
+      width: 100%;
+      margin-top: 10px;
+  }
+}

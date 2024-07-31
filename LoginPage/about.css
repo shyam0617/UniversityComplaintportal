@@ -1,0 +1,107 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark gray text */
+    line-height: 1.6;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Blue for links */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Header Styles */
+header {
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 20px;
+    /* border-bottom: 2px solid #007bff; Blue bottom border */
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+header nav a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555; /* Medium gray text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #f0f0f0; /* Lighter gray background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #333; /* Dark gray text */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555; /* Medium gray text */
+}
+
+/* Content Section Styles */
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.content h2 {
+    font-size: 24px;
+    color: #333; /* Dark gray text */
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    color: #555; /* Medium gray text */
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.content ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 20px 0;
+    text-align: center;
+    color: #777; /* Medium gray text */
+    font-size: 14px;
+}

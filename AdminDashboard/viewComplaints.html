@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complaints</title>
+    <link rel="stylesheet" type="text/css" href="viewComplaints.css">
+</head>
+<body>
+    <header>
+        <h1>Complaints</h1>
+        <button id="logoutBtn">Back to Dashboard</button>
+    </header>
+    <div class="container">
+        <div class="profile-section">
+            <h2>Profile</h2>
+            <div id="profile">
+                <p><strong>Name:</strong> <span id="studentName"></span></p>
+                <p><strong>Email:</strong> <span id="studentEmail"></span></p>
+            </div>
+        </div>
+
+        <div class="grievance-section">
+            <h2>All Complaints</h2>
+            
+            <table id="grievancesTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Issue</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="grievancesBody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="viewComplaints.js"></script>
+</body>
+</html>

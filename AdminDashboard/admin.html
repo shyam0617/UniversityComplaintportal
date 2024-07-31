@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="admin.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <div class="right-btns">
+            <button id="changePasswordBtn" class="btn">Change Password</button>
+            <button id="logoutBtn" class="btn">Logout</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="profile">
+            <div class="AdminName"><p><strong>Name:</strong><span id="adminName"></span></p></div>
+            <div class="EmailName"><p><strong>Email:</strong><span id="adminEmail"></span></p></div>
+        </div>
+
+        <div class="secondPortion">
+            <h2>Filters</h2>
+            <div class="filters">
+                <div class="filter-item">
+                    <label for="IssueSelect">Issue:</label>
+                    <select id="IssueSelect">
+                        <option value="Electric">Electric</option>
+                        <option value="Plumbing">Plumbing</option>
+                        <option value="Cleaning">Cleaning</option>
+                        <option value="Water">Water</option>
+                        <option value="Faculty">Faculty</option>
+                        <option value="Laboratory">Laboratory</option>
+                        <option value="Wifi">Wifi</option>
+                    </select>
+                </div>
+                <button id="viewGrievancesBtn">View Complaints</button>
+            </div>
+        </div>
+
+        <button id="viewStatisticsBtn">View Statistics</button>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

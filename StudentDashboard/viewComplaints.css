@@ -1,0 +1,86 @@
+/* viewComplaints.css */
+
+/* General styles */
+body {
+    background-color: #f7f3e9;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #cbd6f5;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #041f22;
+    margin-top: 0;
+}
+
+.profile-section, .grievance-section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4267b2;
+    color: #fff;
+}
+
+/* Status colors */
+.pending-status {
+    color: red;
+}
+
+.solved-status {
+    color: green;
+}
+
+/* Button styles */
+header {
+    background-color: #4267b2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+button {
+    background-color: #ff9f43;
+    color: #fff;
+    font-weight: 900;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}

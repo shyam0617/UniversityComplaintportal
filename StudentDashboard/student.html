@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="student.css">
+</head>
+
+<body>
+    <header>
+        <h1>Student Dashboard</h1>
+        <div class="right-btns">
+            <button id="changePasswordBtn">Change Password</button>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="profile-section">
+            <h2>Profile</h2>
+
+            <div id="profile">
+                <p><strong>Name:</strong> <span id="studentName"></span></p>
+                <p><strong>Email:</strong> <span id="studentEmail"></span></p>
+            </div>
+        </div>
+
+        <div class="grievance-section">
+            <h2>Give Your Complaint Here</h2>
+            <form id="grievanceForm">
+                <div>
+                    <label for="id">ID:</label>
+                    <input type="text" id="id" name="id" required>
+                </div>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="id-name" name="name" required>
+                </div>
+                <div>
+                    <label for="year">Year:</label>
+                    <select id="year" name="year" required>
+                        <option value="Select Year">Select Year</option>
+                        <option value="PUC-1">PUC-1</option>
+                        <option value="PUC-2">PUC-2</option>
+                        <option value="E1">E1</option>
+                        <option value="E2">E2</option>
+                        <option value="E3">E3</option>
+                        <option value="E4">E4</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="issue">Issue:</label>
+                    <select id="issue" name="issue" required>
+                        <option value="Select Issue">Select Issue</option>
+                        <option value="Electric">Electric</option>
+                        <option value="Plumbing">Plumbing</option>
+                        <option value="Cleaning">Cleaning</option>
+                        <option value="Water">Water</option>
+                        <option value="Faculty">Faculty</option>
+                        <option value="Laboratory">Laboratory</option>
+                        <option value="Wifi">Wifi</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="5" required></textarea>
+                </div>
+                <button id="submit-button" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="grievance-section">
+            <h2>View Your Complaints</h2>
+            <button id="viewGrievancesBtn">View your complaints</button>
+        </div>
+    </div>
+    <script src="student.js"></script>
+</body>
+
+</html>

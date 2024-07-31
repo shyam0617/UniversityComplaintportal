@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Statistics</title>
+    <link rel="stylesheet" href="viewStatistics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Statistics</h1>
+        <button id="logoutBtn">Back to Dashboard</button>
+    </header>
+
+    <div class="container">
+        <div class="totalComplaint">
+            <div class="total">
+                <h2>Total Complaints</h2>
+                <span class="totalComp"></span>
+            </div>
+            <div class="total">
+                <h2>Solved Complaints</h2>
+                <span class="totalSolved"></span>
+            </div>
+            <div class="total">
+                <h2>Pending Complaints</h2>
+                <span class="totalPending"></span>
+            </div>
+        </div>
+        
+        <div class="select">
+            <label for="IssueSelect">Issue:</label>
+            <select id="IssueSelect">
+                <option value="Electric">Electric</option>
+                <option value="Plumbing">Plumbing</option>
+                <option value="Cleaning">Cleaning</option>
+                <option value="Water">Water</option>
+                <option value="Faculty">Faculty</option>
+                <option value="Laboratory">Laboratory</option>
+                <option value="Wifi">Wifi</option>
+            </select>
+            <!-- <button id="viewBtn">View</button> -->
+        </div>
+
+        <div class="singleComplaint">
+            <div class="single">
+                <h2>Total Complaints</h2>
+                <span class="singleComp"></span>
+            </div>
+            <div class="single">
+                <h2>Solved Complaints</h2>
+                <span class="singleSolved"></span>
+            </div>
+            <div class="single">
+                <h2>Pending Complaints</h2>
+                <span class="singlePending"></span>
+            </div>
+        </div>
+    </div>
+    <script src="viewStatistics.js"></script>
+</body>
+</html>
